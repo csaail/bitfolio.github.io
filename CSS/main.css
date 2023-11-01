@@ -158,3 +158,29 @@ img{
 }
 
 
+@media(max-width: 430px) {
+    #navbar{
+        display: none;
+    }
+    img{    
+        max-width: 15%;
+        max-height:15%;
+        float: left;
+        margin-right: 20px;
+    }
+
+    #door{
+        left: 10px;
+    }
+    #dooor{
+        left: 150px;
+    }
+    #walk{
+        left: 150px;
+    }
+    #dialogue-1{
+        height: 350px;
+        top:350px;
+    }
+
+}
