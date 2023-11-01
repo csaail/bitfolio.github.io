@@ -16,7 +16,7 @@
         
         <button type="button" class="nes-btn is-error" id="showButton">Continue</button>
         
-        <!--<div id="preloader"></div>-->
+        <div id="preloader"></div>
         <div id="navbar"></div>
         <script src="JS/fetch.js"></script>
 
@@ -47,4 +47,11 @@
     
 </body>
     <script src="JS/main.js"></script>
+    <!--preloader-->
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            loader.style.display= "none";
+        })
+    </script>
 </html>
