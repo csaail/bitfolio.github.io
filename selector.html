@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/selector.css">
+</head>
+
+
+<body>
+    <div id="preloader"></div>
+    <div class="banner" style="background-image:url(Assets/Backgrounds/Bg3.png);">
+
+        <!--<div id="preloader"></div>--> 
+        <div id="navbar"></div>
+        <script src="JS/fetch.js"></script>
+        
+
+        <div class="disabled"  id="disable" style="display: flex;">
+
+            <div class="column">
+                <div class="row">
+                    <button type="button"class="nes-btn is-disabled" id="diss">Illustrations</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="nes-btn is-disabled" id="diss">Figma</button>
+                </div>
+            </div>
+
+            <div class="column">
+                <button type="button" class="nes-btn is-disabled" id="diss" style="cursor: pointer;">Curriculum Vitae</button>
+            </div>
+
+            <div class="column">
+                <div class="row">
+                    <button type="button" class="nes-btn is-disabled" id="diss">Photography</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="nes-btn is-disabled" id="diss">Socials</button>
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="enable" id="enable" style="display: none;">
+        
+            <div class="column">
+                <div class="row">
+                    <button type="button" class="nes-btn is-warning">Illustrations</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="nes-btn is-warning" id="figma" style="cursor: pointer;">Figma</button>
+                </div>
+            </div>
+        
+            <div class="column">
+                <button type="button" class="nes-btn is-warning" id="cv" style="cursor: pointer;">Curriculum Vitae</button>
+            </div>
+        
+            <div class="column">
+                <div class="row">
+                    <button type="button" class="nes-btn is-warning" id="photo" style="cursor: pointer;">Photography</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="nes-btn is-warning">Socials</button>
+                </div>
+            </div>
+        
+        </div>
+        
+        <div class="nes-container is is-rounded is-dark" id="dialogue" >
+            <div class="image" id="img">
+                <img src="Assets/walter-white.png">
+            </div>
+            <div>Welcome, brave traveler! Here, you can embark on a pixelated adventure through my portfolio. Select your quest by pressing the button of your choice and let the <br>journey begin!"</div>
+            <a class="nes-btn" href="#" id="nextButton">Next</a>
+        </div>        
+
+    </div>
+
+</body>
+<script src="JS/selector.js"></script>
+
+</html>
+

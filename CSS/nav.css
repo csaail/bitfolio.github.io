@@ -1,0 +1,74 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 8px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    position: relative;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;   
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+
+
+/* CSS for the dropdown */
+#drop-down {
+    display: none;
+    position: absolute;
+    background-color:transparent; /* Black background color */
+    top: 110%; /* Position dropdown below parent li */
+    min-width: 150px; /* Adjust the minimum width as needed */
+    z-index: 1; /* Ensure dropdown is above other content */
+}
+
+#drop-down ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#drop-down li {
+    margin: 2px;
+}
+
+#drop-down a {
+    color: #fff; /* Text color */
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px; /* Adjust padding as needed */
+}
+
+#drop-down a:hover {
+    background-color: #333; /* Darker background on hover */
+}
+
+/* Show dropdown on parent li hover */
+nav ul li:hover #drop-down {
+    display: block;
+}

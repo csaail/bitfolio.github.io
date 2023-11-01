@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/nav.css">
+</head>
+<body>
+    <nav id="nav">
+        <h1 class="nes-text is-error">Saail</h1>
+
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li>
+                    <a href="#">Socials</a>
+                    <div id="drop-down">
+                        <ul>
+                            <li><a><i class="nes-icon github is-medium" id="github" style="cursor: pointer;"></i></a></li>
+                            <li><a><i class="nes-icon linkedin is-medium" id="linkedin" style="cursor: pointer;"></i></a></li>
+                            <li><a><i class="nes-icon gmail is-medium" id="gmail" style="cursor: pointer;"></i></a></li>
+                        </ul>
+                    </div>
+                </li>  
+            </ul>
+        </nav>
+</body>
+<script>
+
+    const gitele = document.getElementById("github");
+    const linkele = document.getElementById("linkedin")
+    const gmaele = document.getElementById("gmail")
+    
+    
+    gitele.addEventListener("click", function() {
+        const redirectUrl = "https://github.com/csaail";
+        window.location.href = redirectUrl;
+    });
+    
+    linkele.addEventListener("click", function() {
+        const redirectUrl1 = "https://www.linkedin.com/in/saail-chavan-135a1a1b6/";
+        window.location.href = redirectUrl1;
+    });
+    
+    gmaele.addEventListener("click", function() {
+        const redirectUrl2 = "mailto:saailchavan02@gmail.com";
+        window.location.href = redirectUrl2;
+    });</script>
+</html>

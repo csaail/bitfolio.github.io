@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saail</title>
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/main.css">
+
+</head>
+
+
+<body>
+    <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('Assets/Backgrounds/Bg1.png');">
+        
+        <button type="button" class="nes-btn is-error" id="showButton">Continue</button>
+        
+        <!--<div id="preloader"></div>-->
+        <div id="navbar"></div>
+        <script src="JS/fetch.js"></script>
+
+        
+        <div class="nes-container is-rounded is-dark" id="dialogue-1" style="display: none;">
+            <div class="image">
+                <img src="Assets/walter-white.png">
+            </div>
+            <h1>Hi, I am Saail</h1>
+            <p id="greeting"></p>
+            <a class="nes-btn" href="#" id="nextButton">Next</a>
+        </div>
+
+        <div id="walk" class="centered animate-left" style="display: none;" >
+            <img src="Assets/slayer/right.png" alt="Image 1" id="image1">
+            <img src="Assets/slayer/back.png" alt="Image 2" id="image2" style="display: none;">
+        </div>
+
+        <div id="dooor" class="centered" style="display: none;" >
+            <img src="Assets/door/door-close.png" id="door-open">
+            <img src="Assets/door/door-open.png" id="door-close" style="display: none;">
+        </div>
+        
+        <a class="nes-btn is-error" id="door" style="display: none;">Would you like to enter?</a> 
+        
+        
+    </div>
+    
+</body>
+    <script src="JS/main.js"></script>
+</html>

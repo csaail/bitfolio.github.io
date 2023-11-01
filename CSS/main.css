@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #080808;
+    color: #fff;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-color: #080808;
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+}
+
+.banner{
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/*Dialogue-BOX*/
+
+#dialogue-1{
+    top:425px;
+}
+
+
+img{    
+    max-width: 5%;
+    max-height:5%;
+    float: left;
+    margin-right: 20px;
+}
+
+
+/*Buttons*/
+
+#nextbutton{
+    position: fixed;
+}
+ 
+#showButton{
+    display: flex;
+    margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
+}
+
+
+
+/* Door-Sizing*/
+
+#door{
+    top: 500px;
+    left: 500px;
+    align-items: center;
+    width: 400px;
+    height: 80px;
+}
+#dooor {
+    top: 80px;
+    position: absolute;
+    box-sizing: border-box;
+    left: 600px;
+    width: 163px;
+    height: 240px;
+    transition: opacity 0.5s; /* for fading effect */
+}
+
+#door-open,#door-close{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+/*Slayer-Sizing*/
+
+#walk {
+    top: 360px;
+    position: absolute;
+    box-sizing: border-box;
+    left: 600px;
+    width: 163px;
+    height: 240px;
+    transition: opacity 0.5s; /* for fading effect */
+}
+
+#image1, #image2 {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+/* ANNIMATION SECTION */
+
+
+/* Initial animation: Move from left to center */
+.animate-left {
+    animation: moveLeftToCenter 2s ease-in-out forwards;
+}
+
+/* Animation to move up and fade out */
+.animate-up {
+    animation: moveUp 2s ease-in-out forwards, fadeOut 1s 1s forwards;
+}
+
+
+/* Keyframes for moving from left to center */
+@keyframes moveLeftToCenter {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Keyframes for moving up */
+@keyframes moveUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100px);
+    }
+}
+
+/* Keyframes for fading out */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+

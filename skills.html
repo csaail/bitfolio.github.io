@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/skills.css">
+</head>
+<body>
+  
+    <section class="Parallax">
+        <img src="Assets/Parallax/sky.png">
+        <img src="Assets/Parallax/moon .png"  id="moon">
+        <img src="Assets/Parallax/clouds.png" id="c1">
+        <img src="Assets/Parallax/clouds.png" id="c2">
+        <img src="Assets/Parallax/backmountains.png" id="back-mount">
+        <img src="Assets/Parallax/frontmountains.png" id="front-mount">
+        <img src="Assets/Parallax/purple-light.png" id="purple">
+        <img src="Assets/Parallax/trees.png">
+        <h2 id="text"><span>Unveiling</span><br>My Expertise</h2>
+        <img src="Assets/Parallax/grass.png">
+    </section>
+
+    <div class="underground">
+        <h2>Saail Chavan</h2>
+        <p>A flexible computer science aspirant. Eager to secure an internship/job using my skills and knowledge, I am excited to fully start my career and to internalize and implement all that i can absorb in this field.</p><br>
+        
+        <h3>Skills:</h3>
+        <ul class="skills">
+            <li>C <progress class="nes-progress is-pattern" value="50" max="100"></progress></li>
+            <li>C++ <progress class="nes-progress is-pattern" value="80" max="100"></progress></li>
+            <li>CSS <progress class="nes-progress is-pattern" value="70" max="100"></progress></li>
+            <li>SQL <progress class="nes-progress is-pattern" value="70" max="100"></progress></li>
+            <li>PHP <progress class="nes-progress is-pattern" value="30" max="100"></progress></li>
+            <li>HTML <progress class="nes-progress is-pattern" value="80" max="100"></progress></li>
+            <li>Java <progress class="nes-progress is-pattern" value="20" max="100"></progress></li>
+            <li>React <progress class="nes-progress is-pattern" value="20" max="100"></progress></li>
+            <li>Python <progress class="nes-progress is-pattern" value="70" max="100"></progress></li>
+            <li>MongoDB <progress class="nes-progress is-pattern" value="40" max="100"></progress></li>
+            <li>JavaScript <progress class="nes-progress is-pattern" value="60" max="100"></progress></li>
+
+        </ul><br>
+ 
+        <h3>Projects:</h3>
+        <ul class="projects" style="list-style: disc;" style>
+            <li>pdf-vox (05/2020 - 05/2020): Created Pdf to audio converter</li>
+            <li>Developed an inventory management system using .NET</li>
+            <li>Sign Language Interpreter</li>
+        </ul><br>
+
+        <h3>Certificates:</h3>
+        <ul class="certficates">
+            <li>Cloud Engineering Track and Data Science & Machine Learning Track in 30 Days of Google Cloud Program (10/2021 - 11/2021)</li>
+            <li>DSA (Data Structures and Algorithms) in C++</li>
+        </ul><br>
+
+        <h3>Education:</h3>
+        <ul class="edu">
+            <li>PG</li>
+            <li>UG</li>
+            <li>School</li>
+        </ul><br>
+
+        <h3>Other-skills:</h3>
+        <ul class="other-skills">
+            <li>Graphic Designing</li>
+            <li>Illustrations</li>
+            <li>Photography</li>
+        </ul><br>
+
+
+        <div class="dwnld-contact">
+            <button type="button" class="nes-btn is-primary" id="download">download resume</button>
+            <section>
+                <button type="button" class="nes-btn is-primary" onclick="document.getElementById('dialog-dark-rounded').showModal();">
+                  Contact me
+                </button>
+
+                <dialog class="nes-dialog is-dark is-rounded contact" id="dialog-dark-rounded">
+                  <form method="dialog">
+                    <p class="title">contact me</p>
+                    <div style="background-color:#212529; padding: 1rem;" class="nes-field is-inline">
+                        <label for="dark_field" style="color:#fff;">Name:</label>
+                        <input type="text" id="dark_field" class="nes-input is-dark" placeholder="name">
+                      </div>
+                      <div style="background-color:#212529; padding: 1rem;" class="nes-field is-inline">
+                        <label for="dark_field" style="color:#fff;">Email:</label>
+                        <input type="text" id="dark_field" class="nes-input is-dark" placeholder="email">
+                      </div>
+
+                      <div class="socials">
+
+                      <i class="nes-icon twitter is-medium"></i>
+                    <!-- instagram -->
+                    <i class="nes-icon instagram is-medium"></i>
+                    <!-- github -->
+                    <i class="nes-icon github is-medium"></i>
+                    <!-- gmail -->
+                    <i class="nes-icon gmail is-medium"></i>
+                    <!-- linkedin -->
+                    <i class="nes-icon linkedin is-medium"></i>
+                    <!-- reddit -->
+                    <i class="nes-icon reddit is-medium"></i>
+                  </div><br>
+                    <menu class="dialog-menu">
+                        <button class="nes-btn">Cancel</button>
+                      <button class="nes-btn is-primary">Confirm</button>
+                    </menu>
+                  </form>
+                </dialog>
+              </section>
+        </div>
+
+        
+        <ul class="footr">
+        </ul>
+
+
+    </div>
+
+    <script src="JS/skills.js"></script>
+</body>
+</html>
+

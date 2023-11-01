@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        #preloader {
+            background: #080808 url(Assets/Preload.gif) no-repeat center center;
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="preloader"></div>
+
+    <script>
+        var loader = document.getElementById("preloader");
+        setTimeout(function () {
+            loader.style.display = "none";
+        }, 5000); // 5-second delay
+    </script>
+    
+
+</body>
+</html>
