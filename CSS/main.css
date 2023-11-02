@@ -162,6 +162,9 @@ img{
     #navbar{
         display: none;
     }
+    .banner{
+        overflow: hidden;
+    }
     img{    
         max-width: 15%;
         max-height:15%;
