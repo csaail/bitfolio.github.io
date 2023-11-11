@@ -23,16 +23,9 @@ body{
     height: 90vh;
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 }
 
-#preloader{
-    background:#080808 url(Assets/preloader.gif) no-repeat center center;
-
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-}
 
 
 /*Dialogue-BOX*/
@@ -67,23 +60,28 @@ img{
 }
 
 
-
 /* Door-Sizing*/
 
 #door{
-    top: 500px;
-    left: 500px;
-    align-items: center;
     width: 400px;
     height: 80px;
+    margin: 0;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
 }
+
 #dooor {
-    top: 80px;
     position: absolute;
     box-sizing: border-box;
-    left: 600px;
     width: 163px;
     height: 240px;
+    top: 25%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
     transition: opacity 0.5s; /* for fading effect */
 }
 
@@ -97,12 +95,14 @@ img{
 /*Slayer-Sizing*/
 
 #walk {
-    top: 360px;
-    position: absolute;
+    position:relative;
     box-sizing: border-box;
-    left: 600px;
     width: 163px;
     height: 240px;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
     transition: opacity 0.5s; /* for fading effect */
 }
 
@@ -133,12 +133,13 @@ img{
         transform: translateX(-100%);
     }
     100% {
-        transform: translateX(0);
+        transform: translateX(-50%);
     }
 }
 
 /* Keyframes for moving up */
 @keyframes moveUp {
+
     0% {
         transform: translateY(0);
     }
@@ -158,13 +159,12 @@ img{
 }
 
 
+
 @media(max-width: 430px) {
     #navbar{
         display: none;
     }
-    .banner{
-        overflow: hidden;
-    }
+    
     img{    
         max-width: 15%;
         max-height:15%;
@@ -172,18 +172,10 @@ img{
         margin-right: 20px;
     }
 
-    #door{
-        left: 10px;
-    }
-    #dooor{
-        left: 150px;
-    }
-    #walk{
-        left: 150px;
-    }
     #dialogue-1{
-        height: 400px;
+        height: 350px;
         top:350px;
     }
 
 }
+
