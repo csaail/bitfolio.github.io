@@ -99,6 +99,35 @@ section img#purple,#moon{
 .socials{
     align-items: center;
     justify-content: center;
-    margin-left: 80px;
     margin-top: 10px;
+}
+
+
+
+@media(max-width: 430px) {
+    /*
+    section{
+        height: 40%;
+    }*/
+    .Parallax{
+        height: 20vh;
+    }
+    .Parallax h2 span{
+        font-size:.30em;
+    }
+    .Parallax h2{
+        font-size: 0.8cm;
+    }
+    img{
+        display: none;
+    }
+    .socials{
+        margin-top: 10px;
+    }
+    .underground{
+        padding: 20px;
+    }
+    .nes-dialog{
+        width: 100%;
+    }
 }
